@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../header/Header.modules.css"
 import {
   FaFacebook,
   FaInstagram,
@@ -6,12 +7,12 @@ import {
   FaYoutube,
   FaTwitch,
 } from "react-icons/fa";
-import Search from "./Search";
+import Search from "../search/Search";
 
 const Header = () => {
   return (
     <>
-      <header className="header">
+      <header className={styles.header}>
         <div className="top-section">
           <div className="social-icons">
             <a href="https://www.facebook.com/">

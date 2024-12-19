@@ -5,9 +5,9 @@ import { FaSearch } from "react-icons/fa";
 const Search = () => {
   return (
     <>
-      <div>
-        <input type="text" placeholder="Search" className="search-input" />
-        <Button variant="outline-light" className="search-button">
+      <div className="">
+        <input type="text" placeholder="Search" className="" />
+        <Button variant="outline-light" size="sm" className="search-button">
           <FaSearch />
         </Button>
       </div>

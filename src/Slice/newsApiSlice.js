@@ -3,10 +3,10 @@ import { apiSlice } from "./apiSlice";
 export const newsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getNews: builder.query({
-      query: () => "/posts",
+      query: () => "/news",
     }),
     getNewsById: builder.query({
-      query: (id) => `/posts/${id}`,
+      query: (id) => `/news/${id}`,
     }),
   }),
 });

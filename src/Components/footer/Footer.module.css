@@ -9,11 +9,15 @@ footer {
   gap: 20px; 
 }
 
-.description h5 {
+h3 {
+  width: 800px;
+  margin-bottom: 20px
+}
+
+.description h3 {
   font-size: 18px;
-  line-height: 1.5;
-  max-width: 600px;       
-  margin: 0 auto;         
+  line-height: 1.5;    
+       
 }
 
 .search {
@@ -30,13 +34,14 @@ footer {
 .icons {
   display: flex;
   justify-content: center; 
-  gap: 15px;              
+  color: white;
 }
 
 .icons a {
   font-size: 24px;
   color: #fff;
   transition: color 0.3s ease;
+  color: white;
 }
 
 .icons a:hover {

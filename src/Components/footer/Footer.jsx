@@ -14,11 +14,11 @@ const Footer = () => {
     <>
       <footer className={styles.footer}>
         <div className="description">
-          <h5>
+          <h3>
             “Stay updated with the latest headlines, breaking news, and trending
             stories from around the world. Your go-to source for reliable, fast,
             and engaging news coverage, all in one place.”
-          </h5>
+          </h3>
         </div>
         <div className="search">
           <h3>Subscribe to our newsletter.We'll keep you up to date</h3>

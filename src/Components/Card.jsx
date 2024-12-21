@@ -1,24 +1,16 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ image, title, description, url }) => {
+
   return (
-    <div className="card-container ">
-      <div className="card">
-        <div className="card-image">
-          <img
-            src="https://via.placeholder.com/320x180" // Replace with the actual image URL
-            alt="Alien Lander"
-          />
-        </div>
-        <div className="card-content">
-          <h3>How to Code a Scrolling “Alien Lander” Website</h3>
-          <p>
-            We’ll be putting things together so that as you scroll down from the
-            top of the page you’ll see an “Alien Lander” making its way to touch
-            down.
-          </p>
-          <p className="card-author">KEZZ BRACEY</p>
-        </div>
+    <div className="d-flex justify-content-center mx-2 my-3 w-25">
+      <div className="card-image d-flex justify-content-center mx-2 my-3 w-25">
+        <img src={image} alt="Alien Lander" />
+      </div>
+      <div className="card-description d-flex-justify-content-center mx-5 w-50">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p>{url}</p>
       </div>
     </div>
   );

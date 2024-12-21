@@ -3,12 +3,12 @@ import { apiSlice } from "./apiSlice";
 export const newsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getNews: builder.query({
-      query: () => "/news",
+      query: () => `top-headlines?country=us`,
     }),
     getNewsById: builder.query({
-      query: (id) => `/news/${id}`,
+      query: (id) => `everything?q=${id}`,
     }),
   }),
 });
 
-export const { useGetNewsQuery, useGetNewsByIdQuery } = postsApi;
+export const { useGetNewsQuery, useGetNewsByIdQuery } = newsApi;

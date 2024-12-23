@@ -1,16 +1,20 @@
 import React from "react";
 
 const Card = ({ image, title, description, url }) => {
-
   return (
-    <div className="d-flex justify-content-center mx-2 my-3 w-25">
-      <div className="card-image d-flex justify-content-center mx-2 my-3 w-25">
-        <img src={image} alt="Alien Lander" />
-      </div>
-      <div className="card-description d-flex-justify-content-center mx-5 w-50">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <p>{url}</p>
+    <div className="card mx-2 my-3 shadow" style={{ maxWidth: "300px" }}>
+      <img
+        src={image}
+        className="card-img-top rounded-top"
+        alt=""
+        style={{ height: "200px", objectFit: "cover" }}
+      />
+      <div className="card-body">
+        <h5 className="card-title fw-bold">{title}</h5>
+        <p className="card-text text-muted">{description}</p>
+        <a href={url} className="btn btn-primary btn-sm">
+          Read More
+        </a>
       </div>
     </div>
   );

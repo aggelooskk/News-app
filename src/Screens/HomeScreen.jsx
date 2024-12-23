@@ -12,7 +12,8 @@ const HomeScreen = () => {
     isError
   ) : (
     <div className="container mt-4">
-      <h1 className="text-center mb-4 fw-bold text-dark">Latest News</h1>
+      <h1 className="text-start mb-4 fw-bold text-dark">Latest News</h1>
+      <hr />
       <div className="row justify-content-center">
         {data?.articles?.map((article, index) => (
           <div
@@ -28,6 +29,7 @@ const HomeScreen = () => {
           </div>
         ))}
       </div>
+      <hr />
     </div>
   );
 };

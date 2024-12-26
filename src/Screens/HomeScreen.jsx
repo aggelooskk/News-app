@@ -1,24 +1,25 @@
 import React from "react";
 import { useGetNewsQuery } from "../Slices/newsApiSlice";
 import Card from "../Components/Card";
-import { Spinner } from "react-bootstrap";
 
 const HomeScreen = () => {
   const { data, isError, isLoading } = useGetNewsQuery();
 
   return isLoading ? (
-    <Spinner />
+    <div className="text-center text-gray-500 mt-10">Loading...</div>
   ) : isError ? (
-    isError
+    <div className="text-center text-red-500 mt-10">Error loading news</div>
   ) : (
-    <div className="container mt-4">
-      <h1 className="text-start mb-4 fw-bold text-dark">Latest News</h1>
-      <hr />
-      <div className="row justify-content-center">
+    <div className="container mx-auto mt-8 px-4">
+      <h1 className="text-left mb-6 text-3xl font-bold text-gray-900">
+        Latest News
+      </h1>
+      <hr className="mb-6" />
+      <div className="flex flex-wrap justify-center gap-6">
         {data?.articles?.map((article, index) => (
           <div
             key={index}
-            className="col-12 col-md-6 col-lg-4 d-flex justify-content-center"
+            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex justify-center"
           >
             <Card
               image={article.urlToImage}
@@ -29,7 +30,7 @@ const HomeScreen = () => {
           </div>
         ))}
       </div>
-      <hr />
+      <hr className="mt-6" />
     </div>
   );
 };

@@ -13,7 +13,7 @@ const HomeScreen = () => {
       <div className="flex justify-start mx-5 my-5">
         <h1 className="text-3xl font-bold">Breaking News</h1>
       </div>
-      <hr />
+      <hr className="" />
       {/* LEFT DIV */}
       <div className="flex flex-row justify-start my-5 mx-5">
         {data?.articles?.slice(0, 1).map((article, index) => (
@@ -48,6 +48,7 @@ const HomeScreen = () => {
         <h1 className="text-3xl font-bold">Trending</h1>
         <hr className="" />
       </div>
+      {/* MID DIV */}
       <div className="flex flex-row flex-wrap justify-center gap-5 m-3 my-5">
         {data?.articles?.slice(0, 8).map((article, index) => (
           <div key={index} className=" ">
@@ -59,6 +60,23 @@ const HomeScreen = () => {
             />
           </div>
         ))}
+      </div>
+      <div className="flex justify-start mx-3 my-7">
+        <h1 className="text-3xl font-bold">Categories</h1>
+        <hr />
+      </div>
+      {/* BOTTOM DIV */}
+      <div className="flex flex-row flex-wrap justify-start gap-3 my-5 text-7xl font-medium">
+        <h1>Reviews.</h1>
+        <h1>News.</h1>
+        <h1>Guides.</h1>
+        <h1>Deals.</h1>
+        <h1>Videos.</h1>
+        <h1>Reader Poll.</h1>
+        <h1>Features.</h1>
+        <h1>Staff Picks.</h1>
+        <h1>Game Culture.</h1>
+        <h1>Podcast.</h1>
       </div>
     </>
   );

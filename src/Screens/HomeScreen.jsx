@@ -66,17 +66,17 @@ const HomeScreen = () => {
         <hr />
       </div>
       {/* BOTTOM DIV */}
-      <div className="flex flex-row flex-wrap justify-start gap-3 my-5 text-7xl font-medium">
-        <h1>Reviews.</h1>
-        <h1>News.</h1>
-        <h1>Guides.</h1>
-        <h1>Deals.</h1>
-        <h1>Videos.</h1>
-        <h1>Reader Poll.</h1>
-        <h1>Features.</h1>
-        <h1>Staff Picks.</h1>
-        <h1>Game Culture.</h1>
-        <h1>Podcast.</h1>
+      <div className="flex flex-wrap justify-start gap-3 my-5 mx-5 text-7xl font-medium">
+        <h1 className="hover:text-blue-600/100">News.</h1>
+        <h1 className="hover:text-blue-600/100">Reviews.</h1>
+        <h1 className="hover:text-blue-600/100">Guides.</h1>
+        <h1 className="hover:text-blue-600/100">Deals.</h1>
+        <h1 className="hover:text-blue-600/100">Videos.</h1>
+        <h1 className="hover:text-blue-600/100">Reader Poll.</h1>
+        <h1 className="hover:text-blue-600/100">Features.</h1>
+        <h1 className="hover:text-blue-600/100">Staff Picks.</h1>
+        <h1 className="hover:text-blue-600/100">Game Culture.</h1>
+        <h1 className="hover:text-blue-600/100">Podcast.</h1>
       </div>
     </>
   );

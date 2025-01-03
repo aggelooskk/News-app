@@ -10,13 +10,13 @@ const HomeScreen = () => {
 
   return (
     <>
-      <div className="flex justify-start mx-5 my-5">
+      <div className="flex justify-start mt-5 mx-3">
         <h1 className="text-3xl font-bold">Breaking News</h1>
       </div>
-      <hr className="" />
+      <hr className="h-1 bg-gray-100 border-0 rounded dark:bg-gray-900" />
       {/* LEFT DIV */}
       <div className="flex flex-row justify-start my-5 mx-5">
-        {data?.articles?.slice(0, 1).map((article, index) => (
+        {data?.articles?.slice(1, 2).map((article, index) => (
           <div key={index} className="w-2/3 h-full overflow-hidden mr-5">
             <img
               src={article.urlToImage}
@@ -25,29 +25,56 @@ const HomeScreen = () => {
             />
             <div className="p-4">
               <h5 className="text-lg font-bold">{article.title}</h5>
+              <h3>{article.author}</h3>
               <p className="text-sm text-gray-600 mt-2">
-                {article.description || "No description available."}
+                {article.description}
               </p>
             </div>
           </div>
         ))}
         {/* RIGHT DIV*/}
-        <div className="flex flex-wrap justify-center w-96 h-48 py-2 gap-5">
-          {data?.articles?.slice(0, 6).map((article, index) => (
-            <div key={index} className="w-40 h-28">
-              <img src={article.urlToImage} alt={article.title} className="" />
-              <div className="h-10">
-                <h5 className="text-sm font-bold trancate">{article.title}</h5>
+        <div className="flex flex-wrap mt-10">
+          <div>
+            {data?.articles?.slice(1, 3).map((article, index) => (
+              <div key={index} className="w-40 h-30 mb-20 mx-7">
+                <img
+                  src={article.urlToImage}
+                  alt={article.title}
+                  className=""
+                />
+                <div className="h-10">
+                  <h5 className="text-sm font-bold line-clamp-3">
+                    {article.title}
+                  </h5>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div>
+            {data?.articles?.slice(1, 3).map((article, index) => (
+              <div key={index} className="w-40 h-32 mb-20">
+                <img
+                  src={article.urlToImage}
+                  alt={article.title}
+                  className=""
+                />
+                <div className="h-10">
+                  <h5 className="text-sm font-bold line-clamp-3">
+                    {article.title}
+                  </h5>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* */}
       </div>
-      <hr className="font-bold" />
-      <div className="flex justify-start mx-3 my-5">
+      <div className="flex justify-start mt-5 mx-3">
         <h1 className="text-3xl font-bold">Trending</h1>
-        <hr className="" />
       </div>
+      <hr className="h-1 bg-gray-100 border-0 rounded dark:bg-gray-900" />
       {/* MID DIV */}
       <div className="flex flex-row flex-wrap justify-center gap-5 m-3 my-5">
         {data?.articles?.slice(0, 8).map((article, index) => (
@@ -61,10 +88,10 @@ const HomeScreen = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-start mx-3 my-7">
+      <div className="flex justify-start mt-5 mx-3">
         <h1 className="text-3xl font-bold">Categories</h1>
-        <hr />
       </div>
+      <hr className="h-1 bg-gray-100 border-0 rounded dark:bg-gray-900" />
       {/* BOTTOM DIV */}
       <div className="flex flex-wrap justify-start gap-3 my-5 mx-5 text-7xl font-medium">
         <h1 className="hover:text-blue-600/100">News.</h1>

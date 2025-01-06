@@ -5,10 +5,10 @@ export const newsApi = apiSlice.injectEndpoints({
     getNews: builder.query({
       query: () => `top-headlines?country=us`,
     }),
-    getNewsById: builder.query({
-      query: (id) => `everything?q=${id}`,
+    getTrendingNews: builder.query({
+      query: (trending) => `everything?q=${trending}`,
     }),
   }),
 });
 
-export const { useGetNewsQuery, useGetNewsByIdQuery } = newsApi;
+export const { useGetNewsQuery, useGetTrendingNewsQuery } = newsApi;

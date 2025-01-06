@@ -1,12 +1,13 @@
 import React from "react";
 import { useGetNewsQuery } from "../Slices/newsApiSlice";
+import Loader from "../Components/Loader";
 import Card from "../Components/Card";
 
 const HomeScreen = () => {
-  const { data, isError, isLoading } = useGetNewsQuery();
+  const { data, isError, error, isLoading } = useGetNewsQuery();
 
-  if (isLoading) return <p>Loading news...</p>;
-  if (isError) return <p>Failed to load news. Please try again later.</p>;
+  isLoading && <Loader />;
+  isError && <h1>{error}</h1>;
 
   return (
     <>

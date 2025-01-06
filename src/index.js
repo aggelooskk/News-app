@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomeScreen from "./Screens/HomeScreen";
+import TrendingScreen from "./Screens/TrendingScreen";
 import { Provider } from "react-redux";
 import store from "./store";
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} element={<HomeScreen />} />
+      <Route path="/trending" element={<TrendingScreen />} />
     </Route>
   )
 );

@@ -77,7 +77,7 @@ const Footer = () => {
             Guides
           </a>
           <a
-            href="#trending"
+            href="/trending"
             className="text-white text-lg hover:underline hover:text-gray-400"
           >
             Trending

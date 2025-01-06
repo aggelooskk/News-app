@@ -70,7 +70,7 @@ const Header = () => {
             Guides
           </a>
           <a
-            href="#trending"
+            href="/trending"
             className="text-white uppercase text-lg hover:underline"
           >
             Trending

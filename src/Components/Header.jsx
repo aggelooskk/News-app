@@ -11,8 +11,8 @@ import Search from "./Search";
 const Header = () => {
   return (
     <header className="bg-blue-900 text-white py-4">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-4">
+      <div className="px-4">
+        <div className="flex justify-between items-start mb-4">
           <div className="flex space-x-5">
             <a
               href="https://www.facebook.com/"

@@ -20,7 +20,7 @@ const Footer = () => {
           </h3>
         </div>
         <div className="mb-8 text-center">
-          <h3 className="text-xl font-bold">
+          <h3 className="text-xl font-bold mb-3">
             Subscribe to our newsletter. We'll keep you up to date
           </h3>
           <Search />

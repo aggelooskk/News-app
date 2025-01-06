@@ -51,23 +51,8 @@ const Header = () => {
           <h1 className="font-bold text-4xl">NEWS</h1>
         </div>
         <nav className="flex justify-center space-x-8 flex-wrap">
-          <a
-            href="#news"
-            className="text-white uppercase text-lg hover:underline"
-          >
+          <a href="/" className="text-white uppercase text-lg hover:underline">
             News
-          </a>
-          <a
-            href="#reviews"
-            className="text-white uppercase text-lg hover:underline"
-          >
-            Reviews
-          </a>
-          <a
-            href="#guides"
-            className="text-white uppercase text-lg hover:underline"
-          >
-            Guides
           </a>
           <a
             href="/trending"
@@ -76,10 +61,22 @@ const Header = () => {
             Trending
           </a>
           <a
-            href="#platform"
+            href="/buisness"
             className="text-white uppercase text-lg hover:underline"
           >
-            Platform
+            Buisness
+          </a>
+          <a
+            href="/sports"
+            className="text-white uppercase text-lg hover:underline"
+          >
+            Sports
+          </a>
+          <a
+            href="/gaming"
+            className="text-white uppercase text-lg hover:underline"
+          >
+            Gaming
           </a>
         </nav>
       </div>

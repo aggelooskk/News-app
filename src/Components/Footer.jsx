@@ -59,22 +59,10 @@ const Footer = () => {
         </div>
         <div className="flex justify-center space-x-6 flex-wrap">
           <a
-            href="#news"
+            href="/"
             className="text-white text-lg hover:underline hover:text-gray-400"
           >
             News
-          </a>
-          <a
-            href="#reviews"
-            className="text-white text-lg hover:underline hover:text-gray-400"
-          >
-            Reviews
-          </a>
-          <a
-            href="#guides"
-            className="text-white text-lg hover:underline hover:text-gray-400"
-          >
-            Guides
           </a>
           <a
             href="/trending"
@@ -83,10 +71,22 @@ const Footer = () => {
             Trending
           </a>
           <a
-            href="#platform"
+            href="/buisness"
             className="text-white text-lg hover:underline hover:text-gray-400"
           >
-            Platform
+            Buisness
+          </a>
+          <a
+            href="/sports"
+            className="text-white text-lg hover:underline hover:text-gray-400"
+          >
+            Sports
+          </a>
+          <a
+            href="/gaming"
+            className="text-white text-lg hover:underline hover:text-gray-400"
+          >
+            Gaming
           </a>
         </div>
       </div>

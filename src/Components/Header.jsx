@@ -61,10 +61,10 @@ const Header = () => {
             Trending
           </a>
           <a
-            href="/buisness"
+            href="/market"
             className="text-white uppercase text-lg hover:underline"
           >
-            Buisness
+            Market
           </a>
           <a
             href="/sports"

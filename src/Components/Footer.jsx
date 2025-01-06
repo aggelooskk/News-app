@@ -71,10 +71,10 @@ const Footer = () => {
             Trending
           </a>
           <a
-            href="/buisness"
+            href="/market"
             className="text-white text-lg hover:underline hover:text-gray-400"
           >
-            Buisness
+            Market
           </a>
           <a
             href="/sports"

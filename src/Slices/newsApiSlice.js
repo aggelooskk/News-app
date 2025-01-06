@@ -8,7 +8,14 @@ export const newsApi = apiSlice.injectEndpoints({
     getTrendingNews: builder.query({
       query: (trending) => `everything?q=${trending}`,
     }),
+    getMarketNews: builder.query({
+      query: (market) => `everything?q=${market}`,
+    }),
   }),
 });
 
-export const { useGetNewsQuery, useGetTrendingNewsQuery } = newsApi;
+export const {
+  useGetNewsQuery,
+  useGetTrendingNewsQuery,
+  useGetMarketNewsQuery,
+} = newsApi;

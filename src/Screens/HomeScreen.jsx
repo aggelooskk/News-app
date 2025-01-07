@@ -95,7 +95,7 @@ const HomeScreen = () => {
       </div>
       <hr className="h-1 bg-gray-950 border-0 rounded dark:bg-gray-900" />
       {/* BOTTOM DIV */}
-      <div className="flex flex-wrap justify-start gap-3 my-5 mx-5 text-7xl font-medium">
+      <div className="flex flex-wrap justify-start gap-3 my-5 mx-3 text-7xl font-medium italic">
         <h1 className="hover:text-blue-600/100">News.</h1>
         <h1 className="hover:text-blue-600/100">Reviews.</h1>
         <h1 className="hover:text-blue-600/100">Guides.</h1>

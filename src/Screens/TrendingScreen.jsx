@@ -17,6 +17,7 @@ const TrendingScreen = () => {
           <div key={index} className="">
             <Card
               image={article.urlToImage}
+              author={article.author}
               title={article.title}
               description={article.description}
               url={article.url}

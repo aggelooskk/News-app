@@ -24,12 +24,12 @@ const HomeScreen = () => {
               alt={article.title}
               className="object-cover w-full h-96"
             />
-            <div className="p-4">
+            <div className="p-1">
               <h5 className="text-lg font-bold">{article.title}</h5>
-              <h3>{article.author}</h3>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-md text-gray-600 mt-1">
                 {article.description}
               </p>
+              <p className="text-sm font-bold text-gray-600">{article.author}</p>
             </div>
           </div>
         ))}
@@ -82,6 +82,7 @@ const HomeScreen = () => {
           <div key={index} className=" ">
             <Card
               image={article.urlToImage}
+              author={article.author}
               title={article.title}
               description={article.description}
               url={article.url}

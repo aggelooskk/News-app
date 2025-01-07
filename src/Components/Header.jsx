@@ -48,35 +48,23 @@ const Header = () => {
           <Search />
         </div>
         <div className="text-center mb-6">
-          <h1 className="font-bold text-4xl">NEWS</h1>
+          <h1 className="font-bold font-serif text-4xl">N E W S</h1>
         </div>
         <nav className="flex justify-center space-x-8 flex-wrap">
-          <a href="/" className="text-white uppercase text-lg hover:underline">
-            News
+          <a href="/" className="text-white text-lg hover:underline">
+            NEWS
           </a>
-          <a
-            href="/trending"
-            className="text-white uppercase text-lg hover:underline"
-          >
-            Trending
+          <a href="/trending" className="text-white text-lg hover:underline">
+            TRENDING
           </a>
-          <a
-            href="/market"
-            className="text-white uppercase text-lg hover:underline"
-          >
-            Market
+          <a href="/market" className="text-white text-lg hover:underline">
+            MARKET
           </a>
-          <a
-            href="/sports"
-            className="text-white uppercase text-lg hover:underline"
-          >
-            Sports
+          <a href="/sports" className="text-white text-lg hover:underline">
+            SPORTS
           </a>
-          <a
-            href="/gaming"
-            className="text-white uppercase text-lg hover:underline"
-          >
-            Gaming
+          <a href="/gaming" className="text-white text-lg hover:underline">
+            GAMING
           </a>
         </nav>
       </div>
